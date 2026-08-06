@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PhishSense - Auto Phishing Detector</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h3>🛡 PhishSense - Auto Phishing Detector</h3>
+
+      <div class="field">
+        <label>URL</label>
+        <input id="urlField" type="text" readonly />
+      </div>
+
+      <div class="html-preview">
+        <label>Body HTML (Preview)</label>
+        <pre id="bodyHtml" class="body-box">—</pre>
+      </div>
+      
+      <div class="result">
+        <div id="label" class="label">—</div>
+        <div id="prob" class="prob">—</div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
